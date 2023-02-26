@@ -5,7 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <link href="/dist/output.css" rel="stylesheet" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @layer utilities {
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            // keyframes: {
+            //   "trans-right": {
+            //     "0%,100%": { transform: "translateX(10px)" },
+            //     "50%": { transform: "translateX(0)" },
+            //   },
+            // },
+            animation: {
+              blob: "blob 7s infinite",
+            },
+            keyframes: {
+              blob: {
+                "0%": {
+                  transform: "translate(0px, 0px) scale(1)",
+                },
+                "33%": {
+                  transform: "translate(30px, -50px) scale(1.1)",
+                },
+                "66%": {
+                  transform: "translate(-20px, 20px) scale(0.9)",
+                },
+                "100%": {
+                  transform: "translate(0px, 0px) scale(1)",
+                },
+              },
+            },
+            // animation: {
+            //   "trans-right": "trans-right 2s ease-in-out infinite",
+            // },
+            colors: {
+              tonmoy: "#F8F8F8",
+              tonmoy2: "#DCDCDC",
+              tonmoy3: "#59A5FF",
+              tonmoy4: "#F0F0F0",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
   </head>
   <body class="bg-tonmoy4">
     <div class="flex items-center justify-center h-screen">
