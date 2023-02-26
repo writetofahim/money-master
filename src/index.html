@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-tonmoy4">
+    <div class="flex items-center justify-center h-screen">
+      <section class="max-w-[1200px] mx-auto">
+        <div class="flex justify-between px-10 overflow-hidden">
+          <div class="relative w-[55%] my-auto">
+            <div
+              class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
+            ></div>
+            <div
+              class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"
+            ></div>
+            <div
+              class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"
+            ></div>
+            <img
+              class="animate-trans-right"
+              src="../assets/images/pro-rata-salary-calculator.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="w-[40%] bg-tonmoy p-10 flex flex-col items-center">
+            <h4 class="text-lg font-bold mb-8">Income</h4>
+            <div class="mb-4 w-full flex justify-end items-center">
+              <p class="inline-block font-semibold">Income:</p>
+              <input
+                id="income-input-id"
+                class="rounded-sm ml-5 bg-tonmoy2 font-semibold h-9 px-5"
+                type="text"
+                placeholder="$00.00"
+              />
+            </div>
+            <h4 class="text-lg font-bold p-5">Expenses</h4>
+            <div class="mb-4 w-full flex justify-end items-center">
+              <p class="inline-block font-semibold">Food:</p>
+              <input
+                id="food-input-id"
+                class="rounded-sm ml-5 bg-tonmoy2 font-semibold h-9 px-5"
+                type="text"
+                placeholder="$00.00"
+              />
+            </div>
+            <div class="mb-4 w-full flex justify-end items-center">
+              <p class="inline-block font-semibold">Rent:</p>
+              <input
+                id="rent-input-id"
+                class="rounded-sm ml-5 bg-tonmoy2 font-semibold h-9 px-5"
+                type="text"
+                placeholder="$00.00"
+              />
+            </div>
+            <div class="mb-4 w-full flex justify-end items-center">
+              <p class="inline-block font-semibold">Clothes:</p>
+              <input
+                id="clothes-input-id"
+                class="rounded-sm ml-5 bg-tonmoy2 font-semibold h-9 px-5"
+                type="text"
+                placeholder="$00.00"
+              />
+            </div>
+            <button
+              id="calculate-btn"
+              class="py-3 px-10 rounded-sm text-white font-bold bg-tonmoy3"
+            >
+              Calculator
+            </button>
+            <h4 class="text-lg font-bold p-5">
+              Total Expenses: <span id="expenses-id">5500</span>
+            </h4>
+            <h4 class="text-lg font-bold p-5">
+              Balance: <span id="balance-id">4500</span>
+            </h4>
+            <div class="mb-4 w-full flex justify-evenly items-center">
+              <p class="font-semibold">Save:</p>
+              <input class="w-28 h-9 bg-tonmoy2 rounded-sm" type="text" />
+              <p>%</p>
+              <button
+                class="h-9 w-28 rounded-sm text-white font-bold bg-tonmoy3"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
